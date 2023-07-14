@@ -1,0 +1,56 @@
+{
+    "output_file": "settings.json",
+  
+    "command": {
+      "type": "textbox",
+      "value": "!clip",
+      "label": "Command",
+      "tooltip": "The Command to create your Clip."
+    },
+    "bot_response": {
+      "type": "textbox",
+      "value": "@{0}: Clip created!",
+      "label": "Bot Response",
+      "tooltip": "The Message the Bot will give after it was triggered through !clip."
+    },
+    "permission": {
+      "type": "dropdown",
+      "label": "Permission Level",
+      "value": "Everyone",
+      "items": ["Everyone","Moderator","Subscriber"],
+      "tooltip": "Choose, who can trigger your command.",
+      "group": "Extra Settings"
+    },
+    "cooldown": {
+        "type": "slider",
+        "label": "Cooldown",
+        "value": 30,
+        "min": 10,
+        "max": 120,
+        "ticks": 10,
+        "tooltip": "Choose the cooldown for your command.",
+        "group": "Extra Settings"
+    },
+    "devWeb": {
+      "type": "button",
+      "label": "Visit my Readme",
+      "tooltip": "Opens your browser and loads the Readme on GitHub.",
+      "function": "opengithub",
+      "wsevent": "",
+      "group": "Support:"
+    },
+    "Twitch-Token": {
+        "type": "textbox",
+        "value": "Twitch Token here",
+        "label": "Twitch-Token",
+        "tooltip": "Your Access-Token for your Twitch Account. To get one, click the button below."
+      },
+      "btn-Twitch-Token": {
+        "type": "button",
+        "label": "Get your Twitch-Token",
+        "tooltip": "Your Access-Token for your Twitch Account.",
+        "function": "opentwitchtoken",
+        "wsevent": "",
+        "group": "Support:"
+      }
+  }
