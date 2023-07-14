@@ -4,5 +4,6 @@
     "permission": "Everyone",
     "cooldown": 30,
     "onCooldown": "$user, $command is still on cooldown for $cd seconds!",
-	"onUserCooldown": "$user, $command is still on user cooldown for $cd seconds! "
+	"onUserCooldown": "$user, $command is still on user cooldown for $cd seconds! ",
+    "twitch-token": ""
 }
